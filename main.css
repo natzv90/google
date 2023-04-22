@@ -1,0 +1,187 @@
+body{
+    /**background-color: #a8cc3c;*/
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/***********************************/
+/*************************/
+/***************/
+/*Navegacion*/
+
+header{
+    /**background-color: rgb(148, 148, 198);*/
+    /*width--ancho/// height -alto*/
+    width: 100%;
+    height: 60px;
+}
+
+/**Lo que esta dentro de header*/
+header nav{
+    display:flex;
+    /*Justificar hacia la derecha*/
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section{
+    width: 250px;
+    height: auto;
+    display: flex;
+    /*Eliminar puntitos*/
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav .nav-right-section a{
+    margin-right: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color:black;
+}
+
+nav .nav-right-section .menu{
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+
+}
+
+nav .nav-right-section  .imagen{
+    width: 30px;
+    /*redondear imagen*/
+    border-radius: 50%;
+}
+
+
+/*************************************/
+/*******************************/
+/*Main*/
+main{
+    margin-top: 50px;
+    text-align: center;
+}
+
+main .main-logo{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+/*Logo de google*/
+main .main-logo img{
+    width: 300px;
+    height: 100px;
+
+}
+
+/*Seccion input*/
+main .main-input{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+main .main-input-container{
+    width: 500px;
+    border-radius: 80px;
+    border: 2px solid #bfc1c2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-input input{
+    border: none;
+    width: 450px;
+    height: 40px;
+    outline: none;
+}
+
+main .main-input-container:hover{
+    box-shadow: 0 1px 6px 1px #bfc1c2;
+}
+
+main .main-input .search-icon{
+    background-image: url("https://img.icons8.com/android/24/000000/search.png");
+    background-position: center;
+    background-size: contain;
+    width: 15px;
+    background-repeat: no-repeat;
+    height: 15px;
+}
+
+main .main-input .micro-icon{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png");
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+main .main-input .cam-icon{
+    background-image: url("https://cdn.discordapp.com/attachments/1078439993271398553/1091819945328914512/lens.png");
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+main .main-buttons{
+    width: 550px;
+    margin: 0 auto;
+}
+
+main .main-buttons div{
+    display: inline-block;
+}
+
+main .main-buttons button:hover{
+    border: none;
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+footer{
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    font-size: 13px;
+    border-top: 1px solid #bfc1c2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items:center;
+    bottom: 0px;
+}
+
+footer ul{
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left:0px;
+}
+
+footer .footer-left{
+    justify-self: left;
+}
+
+footer .footer-right{
+    justify-self: right;
+}
+
+footer ul li a{
+    color: #5f6368;
+    margin: 10px;
+}
